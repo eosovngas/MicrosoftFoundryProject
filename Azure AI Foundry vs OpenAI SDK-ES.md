@@ -134,15 +134,15 @@ No requiere Entra ID ni Service Principal.
 
 # ⚖ Diferencia Técnica Clave
 
-  Característica               AIProjectClient               OpenAI SDK
-  ---------------------------- ----------------------------- ------------
-  Nivel                        Proyecto                      Deployment
-  Autenticación                TokenCredential (Entra ID)    API Key
-  AzureKeyCredential           ❌ No soportado actualmente   N/A
-  RBAC                         Sí                            Limitado
-  Administración de recursos   Sí                            No
-  Simplicidad                  Media                         Alta
-  Orientado a Enterprise       Sí                            Puede ser
+| Característica             | AIProjectClient                 | OpenAI SDK     |
+| --------------------------- | ------------------------------- | -------------- |
+| Nivel                       | Proyecto                        | Deployment     |
+| Autenticación               | TokenCredential (Entra ID)      | API Key        |
+| AzureKeyCredential          | ❌ No soportado actualmente     | N/A            |
+| RBAC/Access control (IAM)   | Sí                              | Limitado       |
+| Administración de recursos  | Sí                              | No             |
+| Simplicidad                 | Media                           | Alta           |
+| Orientado a Enterprise      | Sí                              | Puede ser      |
 
 > ⚠ **Nota (20-02-2026):** Al momento de agregar este cuadro, sigue el conflicto de AzureKeyCredential
 

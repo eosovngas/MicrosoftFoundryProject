@@ -135,15 +135,15 @@ Does not require Entra ID or Service Principal.
 
 # ⚖ Key Technical Differences
 
-  Feature               AIProjectClient              OpenAI SDK
-  --------------------- ---------------------------- ------------
-  Level                 Project                      Deployment
-  Authentication        TokenCredential (Entra ID)   API Key
-  AzureKeyCredential    ❌ Not supported currently   N/A
-  RBAC                  Yes                          Limited
-  Resource Management   Yes                          No
-  Simplicity            Medium                       High
-  Enterprise-Oriented   Yes                          Can be
+ | Feature                 | AIProjectClient               | OpenAI SDK |
+| ------------------------ | ----------------------------- | ---------- |
+| Level                    | Project                       | Deployment |
+| Authentication           | TokenCredential (Entra ID)    | API Key    |
+| AzureKeyCredential       | ❌ Not supported currently    | N/A        |
+| RBAC/Access control (IAM)| Yes                           | Limited    |
+| Resource Management      | Yes                           | No         |
+| Simplicity               | Medium                        | High       |
+| Enterprise-Oriented      | Yes                           | Can be     |
 
 > ⚠ **Note (20-02-2026):** At the time of adding this comparison table,
 > the AzureKeyCredential limitation remains unresolved.
